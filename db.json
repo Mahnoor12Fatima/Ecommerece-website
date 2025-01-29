@@ -1,0 +1,372 @@
+{
+  "seller": [
+    {
+      "name": "Saad Hussain",
+      "password": "saad@123",
+      "email": "saad@gmail.com",
+      "id": "1"
+    }
+  ],
+  "products": [
+    {
+      "name": "Samsung m 40 a ",
+      "price": "550",
+      "category": "mobile",
+      "color": "white",
+      "description": "this is a Samsung product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "inStock": "productData?.inStock",
+      "onSale": "productData?.onSale",
+      "isNewArrival": false,
+      "salePercentage": 20,
+      "id": "1"
+    },
+    {
+      "name": "I phone 14",
+      "price": "100000",
+      "category": "mobile",
+      "color": "black",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": "2",
+      "inStock": true,
+      "onSale": true,
+      "isNewArrival": "",
+      "salePercentage": 10
+    },
+    {
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://i.pinimg.com/736x/62/1b/be/621bbe3e4131d20e3bbaeb7868578204.jpg",
+      "id": "3",
+      "inStock": true,
+      "onSale": false,
+      "isNewArrival": ""
+    },
+    {
+      "name": "Levies Jeans",
+      "price": "5000",
+      "category": "jeans",
+      "color": "blue",
+      "description": "Confirmable jeans for man ",
+      "image": "https://www.filmibeat.com/wimg/desktop/2012/12/13548612746596.jpg",
+      "id": "5",
+      "inStock": true,
+      "onSale": true,
+      "isNewArrival": "",
+      "salePercentage": 50
+    },
+    {
+      "name": "Truck",
+      "price": "1000",
+      "category": "toys",
+      "color": "Red",
+      "description": "A toy for 5 year old child",
+      "image": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/Truck2_1400x.png?v=1662789388",
+      "id": "6",
+      "inStock": true,
+      "isNewArrival": true
+    },
+    {
+      "name": "Noise Smart Watch",
+      "price": "2000",
+      "category": "watch",
+      "color": "Black",
+      "description": "Noise smart watch for man and women both",
+      "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
+      "id": "7",
+      "inStock": true,
+      "onSale": false,
+      "isNewArrival": true
+    },
+    {
+      "name": "Dell",
+      "price": "70000",
+      "category": "laptop",
+      "color": "silver",
+      "description": " variety of processors, graphics cards, hard drives",
+      "image": "https://www.digitaltrends.com/wp-content/uploads/2022/10/IMG_24361-e1666142401941.jpg?fit=720%2C720&p=1",
+      "id": "8",
+      "inStock": true,
+      "onSale": false,
+      "isNewArrival": ""
+    },
+    {
+      "name": "Lenovo",
+      "price": "7000",
+      "category": "laptop",
+      "color": "black",
+      "description": "good",
+      "image": "https://www.shutterstock.com/image-photo/jakartaindonesia-wednesday-14-august-2019-260nw-1791315848.jpg",
+      "id": "9",
+      "inStock": false,
+      "onSale": false,
+      "isNewArrival": ""
+    },
+    {
+      "name": "Sneakers",
+      "price": "3000",
+      "category": "shoes",
+      "color": "pink",
+      "description": "comfortable while running",
+      "image": "https://www.ndure.com/cdn/shop/products/1_6aeb89d9-9ce2-42b1-8b93-3239076a56c3.jpg?v=1671441174",
+      "id": "10",
+      "inStock": false,
+      "onSale": true,
+      "isNewArrival": "",
+      "salePercentage": 10
+    }
+  ],
+  "users": [
+    {
+      "id": "2b17",
+      "name": "mahnoor",
+      "email": "mahnoor@gmail.com",
+      "password": "mahnoor12"
+    },
+    {
+      "id": "09d8",
+      "name": "Samia",
+      "email": "samia@gmail.com",
+      "password": "samia12"
+    },
+    {
+      "id": "7bb9",
+      "name": "Mahrukh",
+      "email": "mahrukh@gmail.com",
+      "password": "mahrukh12"
+    },
+    {
+      "id": "efa0",
+      "name": "Mahnoor",
+      "email": "fatimamahnoor466@gmail.com",
+      "password": "mahnoor12"
+    },
+    {
+      "id": "cf6e",
+      "name": "Mahnoor",
+      "email": "fatimamahnoor466@gmail.com",
+      "password": "mahnoor12"
+    }
+  ],
+  "cart": [
+    {
+      "id": "1d98",
+      "name": "I phone 14",
+      "price": "100000",
+      "category": "mobile",
+      "color": "black",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "quantity": 1,
+      "productId": "2",
+      "userId": "1"
+    },
+    {
+      "id": "5d61",
+      "name": "I phone 14",
+      "price": "100000",
+      "category": "mobile",
+      "color": "black",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "quantity": 1,
+      "productId": "2",
+      "userId": "1"
+    },
+    {
+      "id": "10d4",
+      "name": "Noise Smart Watch",
+      "price": "2000",
+      "category": "watch",
+      "color": "Black",
+      "description": "Noise smart watch for man and women both",
+      "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
+      "inStock": true,
+      "onSale": false,
+      "isNewArrival": true,
+      "quantity": 1,
+      "productId": "7",
+      "userId": "efa0"
+    },
+    {
+      "id": "9115",
+      "name": "Lenovo",
+      "price": "7000",
+      "category": "laptop",
+      "color": "black",
+      "description": "good",
+      "image": "https://www.shutterstock.com/image-photo/jakartaindonesia-wednesday-14-august-2019-260nw-1791315848.jpg",
+      "inStock": false,
+      "onSale": false,
+      "isNewArrival": "",
+      "quantity": 3,
+      "productId": "9",
+      "userId": "efa0"
+    },
+    {
+      "id": "1386",
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://i.pinimg.com/736x/62/1b/be/621bbe3e4131d20e3bbaeb7868578204.jpg",
+      "inStock": true,
+      "onSale": false,
+      "isNewArrival": "",
+      "quantity": 1,
+      "productId": "3",
+      "userId": "7bb9"
+    },
+    {
+      "id": "ec42",
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://i.pinimg.com/736x/62/1b/be/621bbe3e4131d20e3bbaeb7868578204.jpg",
+      "inStock": true,
+      "onSale": false,
+      "isNewArrival": "",
+      "quantity": 1,
+      "productId": "3",
+      "userId": "efa0"
+    },
+    {
+      "id": "085a",
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://i.pinimg.com/736x/62/1b/be/621bbe3e4131d20e3bbaeb7868578204.jpg",
+      "inStock": true,
+      "onSale": false,
+      "isNewArrival": "",
+      "quantity": 1,
+      "productId": "3",
+      "userId": "efa0"
+    },
+    {
+      "id": "1e92",
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://i.pinimg.com/736x/62/1b/be/621bbe3e4131d20e3bbaeb7868578204.jpg",
+      "inStock": true,
+      "onSale": false,
+      "isNewArrival": "",
+      "quantity": 1,
+      "productId": "3",
+      "userId": "efa0"
+    },
+    {
+      "id": "3df6",
+      "name": "HP Laptop",
+      "price": "50000",
+      "category": "laptop",
+      "color": "black",
+      "description": "Hp laptop for student and professionals",
+      "image": "https://i.pinimg.com/736x/62/1b/be/621bbe3e4131d20e3bbaeb7868578204.jpg",
+      "inStock": true,
+      "onSale": false,
+      "isNewArrival": "",
+      "quantity": 1,
+      "productId": "3",
+      "userId": "efa0"
+    },
+    {
+      "id": "2a3e",
+      "name": "I phone 14",
+      "price": "100000",
+      "category": "mobile",
+      "color": "black",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "inStock": true,
+      "onSale": true,
+      "isNewArrival": "",
+      "salePercentage": 10,
+      "quantity": 1,
+      "productId": "2",
+      "userId": "efa0"
+    }
+  ],
+  "orders": [
+    {
+      "email": "anil@user.com",
+      "address": "noida sector x",
+      "contact": "9999",
+      "totalPrice": 104750,
+      "userId": 1,
+      "id": "1"
+    },
+    {
+      "email": "anil@test.com",
+      "address": "noida sector x",
+      "contact": "8877",
+      "totalPrice": 6100,
+      "userId": 1,
+      "id": "3"
+    },
+    {
+      "id": "a83a",
+      "email": "tehminaabbas57@gmail.com",
+      "address": "sgd",
+      "contact": "03406929265",
+      "totalPrice": 100100,
+      "userId": "7bb9"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ed71",
+      "title": "Summer Sale!",
+      "content": "free shipping available"
+    },
+    {
+      "id": "8fc1",
+      "title": "announcement2",
+      "content": "deliver with in 15 days"
+    }
+  ],
+  "category": [
+    {
+      "id": "34d7",
+      "name": "mobile",
+      "image": "https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg?size=338&ext=jpg&ga=GA1.1.553209589.1714435200&semt=sph"
+    },
+    {
+      "id": "34d6",
+      "name": "laptop",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTS03Z0C3ig5pr6loDzgvZNOt5XN4hiheaPnMmeEeSDA&s"
+    },
+    {
+      "id": "34d5",
+      "name": "jeans",
+      "image": "https://media.istockphoto.com/id/1347455404/photo/shot-of-an-unrecognizable-woman-spending-a-day-in-the-city.jpg?s=612x612&w=0&k=20&c=W3-QMPd9D-ok_upk94ooFtb3wnWUZW4Gu8dtYRH3fKI="
+    },
+    {
+      "id": "34d4",
+      "name": "toys",
+      "image": "https://images.unsplash.com/photo-1582552938357-32b906df40cb?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGplYW5zfGVufDB8fDB8fHww"
+    },
+    {
+      "id": "34d3",
+      "name": "watch",
+      "image": "https://cdn.firstcry.com/education/2022/11/06094158/Toy-Names-For-Kids.jpg"
+    },
+    {
+      "id": "34d2",
+      "name": "shoes",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9INnLQ3XcOKkKDsMgNwzIC19rujukLf4sCM-Ybg0tWQ&s"
+    }
+  ]
+}

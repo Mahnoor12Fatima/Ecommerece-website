@@ -1,0 +1,91 @@
+.checkout {
+    padding: 20px;
+  }
+  
+  .checkout h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 32px;
+  }
+  
+  .checkout .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .checkout .col-sm-7,
+  .checkout .col-sm-5 {
+    flex: 1;
+    min-width: 300px; /* Set a minimum width to ensure columns don't get too narrow */
+    margin-bottom: 20px; /* Add margin to separate columns on smaller screens */
+  }
+  
+  .checkout h3 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .checkout .message-p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .checkout .common-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .checkout .form-input {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .checkout .form-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-bottom: 33px;
+        
+        padding-top: 13px;
+  }
+  
+  .checkout .form-button:hover {
+    background-color: #444;
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 576px) {
+    .checkout h2 {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  
+    .checkout .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .checkout .col-sm-7,
+    .checkout .col-sm-5 {
+      width: 100%;
+      max-width: none;
+    }
+  
+    .checkout h3 {
+      font-size: 18px;
+    }
+  }
+  

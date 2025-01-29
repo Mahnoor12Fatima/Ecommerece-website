@@ -1,0 +1,17 @@
+<!-- src/app/category-list/category-list.component.html -->
+<div class="category-list">
+    <h2 style="text-transform: uppercase; font-weight: bold;margin-top:32px; font-size: 30px; text-align: center;">Categories</h2>
+  
+    <div *ngIf="categories.length > 0" class="category-items">
+      <div *ngFor="let category of categories" class="category-item">
+        <img [src]="category.image" alt="Category Image" class="category-image">
+        <h3>{{ category.name }}</h3>
+        <button (click)="deleteCategory(category.id)">Delete</button>
+      </div>
+    </div>
+  
+    <div *ngIf="categories.length === 0">
+      <p>No categories available.</p>
+    </div>
+  </div>
+  

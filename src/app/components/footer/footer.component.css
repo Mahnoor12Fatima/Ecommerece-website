@@ -1,0 +1,83 @@
+/* Reset margin and padding for ul */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Footer styling */
+.footer {
+    padding: 10px;
+    background-color: #343a40;
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Remove any unwanted padding or margins that may cause overflow */
+.footer .row {
+    margin: 0;
+}
+
+/* Ensure links are styled properly */
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Flexbox to ensure proper column layout */
+.nav.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+h5{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .col {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer ul li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .col {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer ul li {
+        margin-bottom: 5px;
+        align-items: center;
+    }
+    h5,p{
+        text-align: center;
+
+    }
+}

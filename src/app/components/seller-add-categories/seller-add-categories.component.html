@@ -1,0 +1,11 @@
+<!-- src/app/seller-add-categories/seller-add-categories.component.html -->
+<div class="category-form">
+    <h1>Add New Category</h1>
+    <p class="message">{{ addCategoryMessage }}</p>
+    <form #addCategoryForm="ngForm" (ngSubmit)="submit(addCategoryForm.value)" class="common-form">
+      <input type="text" placeholder="Enter Category Name" name="name" ngModel required />
+      <input type="text" class="form-input mt-3" placeholder="Enter Category Image URL" name="image" ngModel required />
+      <button type="submit">Add Category</button>
+    </form>
+  </div>
+  

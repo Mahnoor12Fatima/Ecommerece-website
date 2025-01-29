@@ -1,0 +1,151 @@
+<ngb-carousel style="background-color: #999999;color: white;" [showNavigationArrows]="false">
+  <ng-template *ngFor="let announcement of announcements" ngbSlide>
+    <div style="padding: 3px; text-align: center;">
+      <p>{{ announcement.content }}</p>
+    </div>
+
+  </ng-template>
+</ngb-carousel>
+<nav class="nav bg-dark text-white px-4 sticky-top py-2">
+  <div class="w-100">
+    <div class="w-100 " style="display: inline-block;">
+
+      <div class="search-container ">
+
+        <div class="nav-search" *ngIf="shouldShowSearchBar()">
+          <input type="text" [(ngModel)]="searchTerm" placeholder="Search" class="form-control dropdown-toggle"
+            (input)="filterProducts()">
+          <div class="dropdown-menu" [ngClass]="{ 'show': searchTerm.length > 0 }">
+            <button class="close-button" (click)="closeDropdown()"
+              style="position: absolute; top: 0; right: 0; margin-bottom: 22px; z-index: 1">
+              <svg fill="#000000" width="27px" height="27px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M18.8,16l5.5-5.5c0.8-0.8,0.8-2,0-2.8l0,0C24,7.3,23.5,7,23,7c-0.5,0-1,0.2-1.4,0.6L16,13.2l-5.5-5.5 c-0.8-0.8-2.1-0.8-2.8,0C7.3,8,7,8.5,7,9.1s0.2,1,0.6,1.4l5.5,5.5l-5.5,5.5C7.3,21.9,7,22.4,7,23c0,0.5,0.2,1,0.6,1.4 C8,24.8,8.5,25,9,25c0.5,0,1-0.2,1.4-0.6l5.5-5.5l5.5,5.5c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L18.8,16z">
+                  </path>
+                </g>
+              </svg>
+            </button>
+
+
+            <div class="product-row" style="margin-top: 32px;">
+              <ng-container *ngFor="let item of filteredProducts; let i = index">
+                <div *ngIf="i % 3 === 0" class="row">
+                  <div class="col" *ngFor="let product of filteredProducts.slice(i, i + 3)">
+                    <a [routerLink]="'/details/' + product.id" class="card product-card">
+                      <img src="{{ product.image }}" alt="{{ product.name }}" class="card-img-top product-image">
+                      <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </ng-container>
+            </div>
+            <div *ngIf="filteredProducts.length === 0 && searchTerm.trim() !== ''" class="dropdown-item">No matching
+              products found.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <h1>
+        <a routerLink="">E-Comm</a>
+      </h1>
+      <div [ngSwitch]="menuType" class="menus">
+        <div class="menu-item">
+          <div style=" margin-top: 8px;">
+            <ul *ngSwitchCase="'default'" class="menu-list" style=" display:flex;">
+              <li><a routerLink="user-auth"><svg width="27px" height="27px" viewBox="0 0 512 512" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <title>user</title>
+                      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="icon" fill="#ffffff" transform="translate(85.333333, 42.666667)">
+                          <path
+                            d="M170.666667,170.666667 C217.794965,170.666667 256,132.461632 256,85.3333333 C256,38.2050347 217.794965,7.10542736e-15 170.666667,7.10542736e-15 C123.538368,7.10542736e-15 85.3333333,38.2050347 85.3333333,85.3333333 C85.3333333,132.461632 123.538368,170.666667 170.666667,170.666667 Z M170.666667,42.6666667 C194.230816,42.6666667 213.333333,61.769184 213.333333,85.3333333 C213.333333,108.897483 194.230816,128 170.666667,128 C147.102517,128 128,108.897483 128,85.3333333 C128,61.769184 147.102517,42.6666667 170.666667,42.6666667 Z M213.333333,213.333333 L128,213.333333 C57.307552,213.333333 1.42108547e-14,270.640885 1.42108547e-14,341.333333 L1.42108547e-14,426.666667 L341.333333,426.666667 L341.333333,341.333333 C341.333333,270.640885 284.025781,213.333333 213.333333,213.333333 Z M298.666667,384 L42.6666667,384 L42.6666667,341.333333 C42.6666667,294.205035 80.8717013,256 128,256 L213.333333,256 C260.461632,256 298.666667,294.205035 298.666667,341.333333 L298.666667,384 Z"
+                            id="user"> </path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg><span class="px-2">Account</span></a></li>
+              <li><a href="#"> <svg width="27px" height="27px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M16 8H17.1597C18.1999 8 19.0664 8.79732 19.1528 9.83391L19.8195 17.8339C19.9167 18.9999 18.9965 20 17.8264 20H6.1736C5.00352 20 4.08334 18.9999 4.18051 17.8339L4.84718 9.83391C4.93356 8.79732 5.80009 8 6.84027 8H8M16 8H8M16 8L16 7C16 5.93913 15.5786 4.92172 14.8284 4.17157C14.0783 3.42143 13.0609 3 12 3C10.9391 3 9.92172 3.42143 9.17157 4.17157C8.42143 4.92172 8 5.93913 8 7L8 8M16 8L16 12M8 8L8 12"
+                        stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </svg><span class="px-2">Cart({{cartItems}})</span></a></li>
+            </ul>
+          </div>
+          <div style="margin-top: 8px;">
+            <ul *ngSwitchCase="'user'" class="menu-list2" style="display: flex;">
+              <li><a [routerLink]="cartItems>0?'cart-page':null">Cart({{cartItems}})</a></li>
+              <li><a (click)="userLogout()">Logout</a></li>
+            </ul>
+          </div>
+          <div style="margin-top: 8px;">
+            <ul *ngSwitchCase="'seller'" class="menu-list1" style="display: flex;">
+              <li><a (click)="logout()">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" list">
+      <div [ngSwitch]="menuType" class="account">
+        <div>
+
+          <div>
+            <ul *ngSwitchCase="'default'" class="default-menu" style="display: flex;">
+              <li><a routerLink="seller-auth">Seller</a></li>
+              <li><a routerLink="">Home</a></li>
+              <li> <select (change)="navigateToCategory($event)">
+                  <option value="" disabled hidden selected>Categories</option>
+                  <option *ngFor="let category of categories" [value]="category.name">{{ category.name }}</option>
+                </select></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+
+          <div>
+            <ul *ngSwitchCase="'user'" class="user-menu" style="display: flex;">
+              <li><a routerLink="seller-auth">Seller</a></li>
+              <li><a routerLink="">Home</a></li>
+              <li><a>{{userName | titlecase}}</a></li>
+              <li><a routerLink="my-orders">My Orders</a></li>
+              <li> <select aria-label="label for the select" (change)="navigateToCategory($event)">
+                  <option value="" disabled hidden selected>Categories</option>
+                  <option *ngFor="let category of categories" [value]="category.name">{{ category.name }}</option>
+                </select></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+
+          <div>
+            <ul *ngSwitchCase="'seller'" class="seller-menu" style="display: flex;">
+              <li><a routerLink="seller-add-product">Add Product</a></li>
+              <li><a routerLink="seller-home">List</a></li>
+              <li class="announcement"><a routerLink="announcement-list">Announcements</a></li>
+              <li class="category"><a routerLink="category-list">Categories</a></li>
+
+              <li><a href="#">{{sellerName | titlecase}}</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</nav>

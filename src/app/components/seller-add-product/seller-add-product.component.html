@@ -1,0 +1,41 @@
+<div class="add-product">
+  <h2 style="margin-top:32px;text-transform:  uppercase;font-weight:bold;font-size: 30px;">Add New Product</h2>
+ 
+  <p class="message-p">{{ addProductMessage }}</p>
+  <form #addProductForm="ngForm" (ngSubmit)="submit(addProductForm.value)" class="common-form">
+    <input type="text" class="form-input" placeholder="Enter Product Name" name="name" ngModel required />
+    <input type="number" class="form-input" placeholder="Enter Product Price" name="price" ngModel required />
+    <select class="form-input" name="category" ngModel required>
+      <option *ngFor="let category of categories" [value]="category.name">{{ category.name }}</option>
+    </select>
+    <input type="text" class="form-input" placeholder="Enter Product Color" name="color" ngModel required />
+    <textarea
+      class="form-input"
+      placeholder="Enter Product Description"
+      name="description"
+      ngModel
+      required
+    ></textarea>
+    <input type="text" class="form-input" placeholder="Enter Product Image URL" name="image" ngModel required />
+    
+    <label>
+      <input type="checkbox" name="inStock" ngModel /> In Stock
+    </label>
+    <label>
+      <input type="checkbox" name="onSale" ngModel /> On Sale
+    </label>
+    <input
+      *ngIf="addProductForm.value.onSale"
+      type="number"
+      class="form-input"
+      placeholder="Sale Percentage"
+      name="salePercentage"
+      ngModel
+      required
+    />
+    <label>
+      <input type="checkbox" name="isNewArrival" ngModel /> New Arrival
+    </label>
+    <button type="submit" class="form-button">Add Product</button>
+  </form>
+</div>

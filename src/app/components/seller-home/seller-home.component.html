@@ -1,0 +1,42 @@
+<div class="product-list">
+  <div class="product-list-header">
+    <h2 >Product List</h2>
+ 
+    <div class="header-buttons">
+      <a routerLink="/seller-category" class="add-category-button">Add Category</a>
+   
+      <a routerLink="/seller-add-product" class="add-product-button">Add Product</a>
+      <a routerLink="/announcement" class="add-announcement-button">Add Announcement</a>
+    </div>
+  </div>
+  
+  <div class="table-responsive m-5">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Color</th>
+          <th>Category</th>
+          <th>Description</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of productList">
+          <td><img src="{{ item.image }}" /></td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.price }}</td>
+          <td>{{ item.color }}</td>
+          <td>{{ item.category }}</td>
+          <td>{{ item.description }}</td>
+          <td>
+            <fa-icon (click)="deleteProduct(item.id)" [icon]="icon"></fa-icon>
+            <a class="adjust-update-link" routerLink="/seller-update-product/{{item.id}}"><fa-icon [icon]="iconEdit"></fa-icon></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

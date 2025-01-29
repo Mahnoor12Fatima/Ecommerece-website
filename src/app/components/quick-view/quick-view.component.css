@@ -1,0 +1,108 @@
+.row.product-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Background color white, no transparency */
+  background-color: white;
+  padding: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 600px; /* Adjust width as needed */
+}
+
+
+.col-sm-6.product-img {
+  flex: 0 0 200px; /* Set image container width */
+  margin: 10px;
+}
+
+.product-img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Fill container while maintaining aspect ratio */
+}
+
+.col-sm-6.details {
+  flex: 1; /* Take up remaining space for details */
+  padding: 10px;
+  position: relative; /* Needed for absolute positioning of close icon */
+}
+
+.details h1 {
+  margin-bottom: 5px; /* Add some space below the heading */
+}
+
+.details h3 {
+  margin-bottom: 32px; /* Consistent spacing for details */
+}
+
+.details .product-color h3 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /* Make the color swatch round */
+}
+
+
+  
+  .details-button button {
+    width: 100%; /* Make buttons full width */
+    margin-bottom: 10px; /* Add margin between buttons */
+  }
+  
+
+.quantity-group {
+  display: flex; /* Arrange quantity buttons and input side-by-side */
+  align-items: center;
+  width: 35%;
+  background-color: gainsboro;
+  margin-top: 12px;
+  margin-bottom: 22px;
+}
+.quantity-group a {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+  
+  }
+
+
+.quantity-group input {
+    width: 30px;
+    height: 100%; /* Set height to match buttons */
+    text-align: center; /* Center text in the input field */
+    border: none; /* Remove border */
+    outline: none; 
+    background-color: transparent;/* Remove outline */
+    /* Add any additional styles you need */
+  }
+  
+
+.quick-view-close { /* Style the close icon */
+  position: absolute; /* Position it absolutely within details */
+  top: 10px; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  cursor: pointer;
+  color: #333; /* Adjust close icon color */
+}
+.product-details {
+    position: relative; /* Ensure positioning context */
+  }
+  
+  .close-icon {
+    position: absolute; /* Position absolute */
+    top: 10px; /* Adjust top distance as needed */
+    right: 10px; /* Adjust right distance as needed */
+    cursor: pointer;
+  }
+  .product-color{
+    border: 3px solid #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

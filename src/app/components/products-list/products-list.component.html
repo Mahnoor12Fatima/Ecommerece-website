@@ -1,0 +1,32 @@
+<div class="product-list">
+  <div class="search-container">
+    <h1 style="text-transform: uppercase;" class="category-title">{{ category }} </h1>
+    <div class="search-bar">
+      <h2 class="search-title">Price:</h2>
+      <div class="price-filter">
+        <label>From</label>
+        <input type="number" [(ngModel)]="priceFrom" (input)="filterProducts()" placeholder="0"> Rs
+        <label>To</label>
+        <input type="number" [(ngModel)]="priceTo" placeholder="2800" (keyup.enter)="filterProducts()"> Rs
+      </div>
+    </div>
+  </div>
+  
+  <ng-container *ngIf="filteredProducts">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex" *ngFor="let item of filteredProducts">
+        <div class="card mb-3 flex-grow-1">
+          <div class="card-link" [routerLink]="'/details/' + item.id">
+            <img [src]="item.image" class="card-img-top" alt="{{ item.name }}">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">{{ item.name }}</h3>
+              <p class="card-text">Rs. {{ item.price }}</p>
+              <p class="card-text">Color: {{ item.color }}</p>
+            </div>
+          </div>
+          <button (click)="openPopup(item.id)" class="btn-quick-view">Quick View</button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Admin Dashboard - User Cart Data</h2>
+    <div *ngFor="let userData of adminViewUserData">
+      <div>
+        <p><strong>Username:</strong> {{ userData.username }}</p>
+        <p><strong>Cart Items:</strong> {{ userData.cartItems }}</p>
+         <ul>
+          <li *ngFor="let item of userData.cartData">
+            <p><strong>Product Name:</strong> {{ item.name }}</p>
+            <p><strong>Quantity:</strong> {{ item.quantity }}</p>
+          </li>
+        </ul>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <!-- admin.component.html -->
